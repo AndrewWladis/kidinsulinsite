@@ -1,0 +1,177 @@
+@font-face {
+    font-family: tacoFont;
+    src: url(kenyan\ coffee\ rg.ttf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@600&display=swap');
+
+h1 {
+    color:white;
+}
+
+h2 {
+    color: rgb(216, 216, 216);
+}
+
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+}
+
+body {
+    margin: 0 !important;
+}
+
+html {
+    background-color: rgb(13, 13, 13);
+    font-family: tacoFont;
+    scroll-behavior: smooth;
+}
+
+.center-text {
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.container {
+    margin: 3%;
+}
+
+.countdown {
+    display: flex;
+    justify-content: space-around;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 10%;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.countdown-img {
+    max-height: 10%;
+    max-width: 10%;
+    padding-left: 3%;
+    object-fit: contain;
+}
+
+.countdown-release {
+    font-size: 1.5rem;
+}
+
+.countdown-text {
+    font-size: 2rem;
+}
+
+.label {
+    font-size: 130%;
+}
+
+.nav-item {
+    font-size: 250%;
+}
+
+.nav-logo {
+    max-height: 5%;
+    max-width: 5%;
+    object-fit: contain;
+}
+
+.number {
+    font-size: 3rem;
+    color: rgb(216, 216, 216);
+}
+
+#nav {
+    margin: 0;
+    border-bottom: 1px solid white;
+    display: flex;
+    justify-content: space-between;
+    justify-content: space-around;
+}
+
+@media only screen and (max-width: 1500px) {
+    .number {
+        font-size: 3rem;
+        color: rgb(216, 216, 216);
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+    .countdown-img {
+        max-height: 15%;
+        max-width: 15%;
+        padding-left: 3%;
+        object-fit: contain;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .nav-logo {
+        max-height: 10%;
+        max-width: 10%;
+        object-fit: contain;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .number {
+        font-size: 2.5rem;
+        color: rgb(216, 216, 216);
+    }
+}
+
+@media only screen and (max-width: 630px) {
+    .label {
+        font-size: 100%;
+    }
+}
+
+@media only screen and (max-width: 570px) {
+    .nav-logo {
+        max-height: 15%;
+        max-width: 15%;
+        object-fit: contain;
+    }
+}
+
+@media only screen and (max-width: 470px) {
+    .number {
+        font-size: 2rem;
+        color: rgb(216, 216, 216);
+    }
+
+    .label {
+        font-size: 80%;
+    }
+}
+
+@media only screen and (max-width: 370px) {
+    .countdown-release {
+        font-size: 1rem;
+    }
+
+    .countdown-text {
+        font-size: 1.5rem;
+    }
+
+    .number {
+        font-size: 1.5rem;
+        color: rgb(216, 216, 216);
+    }
+
+    .label {
+        font-size: 60%;
+    }
+}
+
+@media only screen and (max-width: 340px) {
+    .nav-item {
+        font-size: 210%;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .nav-item {
+        font-size: 190%;
+    }
+}
