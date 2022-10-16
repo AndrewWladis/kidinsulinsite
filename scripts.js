@@ -90,8 +90,20 @@ function changeFavicon() {
 
 changeFavicon();
 
+//easter eggs
+/*const pressed = [];
+const secretCode = 'kachow';
 
+window.addEventListener('keyup', (e) => {
+    console.log(e.key);
+    pressed.push(e.key)
+    pressed.splice(-secretCode.length - 1, pressed.length - secretCode.length);
 
+    if(pressed.join('').includes(secretCode)) {
+        window.open("https://youtu.be/ErYvqN2eajE")
+    }
+        //make it so that if they type hello there it opens in a new tab with general kenobi 
+});*/
 
 
 

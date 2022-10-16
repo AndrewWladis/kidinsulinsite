@@ -119,12 +119,13 @@ html {
     flex-direction: column;
     margin-top: 1.5%;
     margin-left: 1.5%;
-    margin-right :1.5%;
+    margin-right: 1.5%;
 }
 
 .songs-title {
     padding-left: 3%;
     font-size: 2.5rem;
+    margin-top: 0%;
 }
 
 #countdown {
@@ -135,6 +136,7 @@ html {
 #current-song {
     color: white;
     font-family: tacoFont;
+    font-size: 1.5em;
 }
 
 #merch-row {
@@ -175,7 +177,7 @@ html {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 #progress-line {
@@ -214,6 +216,7 @@ html {
     }
 }
 
+
 @media only screen and (max-width: 700px) {
     .number {
         font-size: 2.5rem;
@@ -240,8 +243,12 @@ html {
     }
 
     #countdown {
-        margin-top: 40%;
+        margin-top: 20%;
         margin-bottom: 30%;
+    }
+
+    #current-song {
+        font-size: 0.9em;
     }
 }
 
@@ -311,5 +318,47 @@ html {
     #countdown {
         margin-top: 40%;
         margin-bottom: 50%;
+    }
+
+    #current-song {
+        font-size: 0.5em;
+    }
+}
+
+/*DEVICES*/
+
+/*ipad air*/
+@media screen and (max-width: 820px) and (min-width: 820px){
+    .songs-title {
+        margin-top: 35%;
+    }
+
+    #countdown {
+        margin-top: 30%;
+        margin-bottom: 15%;
+    }
+}
+
+/*ipad mini*/
+@media screen and (max-width: 768px) and (min-width: 768px){
+    .songs-title {
+        margin-top: 35%;
+    }
+
+    #countdown {
+        margin-top: 30%;
+        margin-bottom: 15%;
+    }
+}
+
+/*surface pro 7*/
+@media screen and (max-width: 912px) and (min-width: 912px){
+    .songs-title {
+        margin-top: 35%;
+    }
+
+    #countdown {
+        margin-top: 30%;
+        margin-bottom: 15%;
     }
 }
