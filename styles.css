@@ -43,7 +43,6 @@ html {
     justify-content: space-around;
     justify-content: space-between;
     text-align: center;
-    margin-top: 10%;
     font-family: 'Roboto Condensed', sans-serif;
 }
 
@@ -66,6 +65,10 @@ html {
     font-size: 130%;
 }
 
+/*.merch-item {
+
+}*/
+
 .nav-item {
     font-size: 250%;
 }
@@ -81,6 +84,65 @@ html {
     color: rgb(216, 216, 216);
 }
 
+.progress {
+    width: 30%;
+    height: 4%;
+    background-color: black;
+    margin-top: 1%;
+}
+
+.songs-card {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(44, 44, 44);
+    border-radius: 2%;
+    margin-bottom: 2%;
+    height: 100px;
+    width: 300px;
+}
+
+.song-card-text {
+    padding-left: 3%;
+    margin-top: 2%;
+    color: rgb(216, 216, 216);
+}
+
+.songs-image {
+    border-radius: 3%;
+    object-fit: contain;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.songs-column {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5%;
+    margin-left: 1.5%;
+    margin-right :1.5%;
+}
+
+.songs-title {
+    padding-left: 3%;
+    font-size: 2.5rem;
+}
+
+#countdown {
+    margin-top: 5%;
+    margin-bottom: 15%;
+}
+
+#current-song {
+    color: white;
+    font-family: tacoFont;
+}
+
+#merch-row {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
 #nav {
     margin: 0;
     border-bottom: 1px solid white;
@@ -89,7 +151,41 @@ html {
     justify-content: space-around;
 }
 
-@media only screen and (max-width: 1500px) {
+#pause-button {
+    max-height: 35%;
+    max-width: 35%;
+    min-height: 35%;
+    min-width: 35%;
+    object-fit: contain;
+}
+
+#songs {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#controls {
+    width: 100%;
+    height: 10vh;
+    background-color: rgb(44, 44, 44);
+    position: sticky;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#progress-line {
+    width: 0%;
+    /*increasing the width increases the line*/
+    height: 4%;
+    background-color: rgb(255, 255, 255);
+}
+
+@media only screen and (max-width: 1530px) {
     .number {
         font-size: 3rem;
         color: rgb(216, 216, 216);
@@ -102,6 +198,11 @@ html {
         max-width: 15%;
         padding-left: 3%;
         object-fit: contain;
+    }
+
+    #countdown {
+        margin-top: 5%;
+        margin-bottom: 15%;
     }
 }
 
@@ -118,6 +219,11 @@ html {
         font-size: 2.5rem;
         color: rgb(216, 216, 216);
     }
+
+    #countdown {
+        margin-top: 35%;
+        margin-bottom: 60%;
+    }
 }
 
 @media only screen and (max-width: 630px) {
@@ -132,6 +238,11 @@ html {
         max-width: 15%;
         object-fit: contain;
     }
+
+    #countdown {
+        margin-top: 40%;
+        margin-bottom: 30%;
+    }
 }
 
 @media only screen and (max-width: 470px) {
@@ -142,6 +253,11 @@ html {
 
     .label {
         font-size: 80%;
+    }
+
+    #countdown {
+        margin-top: 40%;
+        margin-bottom: 50%;
     }
 }
 
@@ -173,5 +289,27 @@ html {
 @media only screen and (max-width: 300px) {
     .nav-item {
         font-size: 190%;
+    }
+
+    .songs-card {
+        display: flex;
+        flex-direction: row;
+        background-color: rgb(44, 44, 44);
+        border-radius: 2%;
+        margin-bottom: 2%;
+        height: 50px;
+        width: 150px;
+    }
+
+    .song-card-text {
+        padding-left: 3%;
+        margin-top: 2%;
+        color: rgb(216, 216, 216);
+        font-size: 1em;
+    }
+
+    #countdown {
+        margin-top: 40%;
+        margin-bottom: 50%;
     }
 }
