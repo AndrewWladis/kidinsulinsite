@@ -91,8 +91,8 @@ function changeFavicon() {
 changeFavicon();
 
 //easter eggs
-/*const pressed = [];
-const secretCode = 'kachow';
+const pressed = [];
+const secretCode = 'heisenberg';
 
 window.addEventListener('keyup', (e) => {
     console.log(e.key);
@@ -100,10 +100,11 @@ window.addEventListener('keyup', (e) => {
     pressed.splice(-secretCode.length - 1, pressed.length - secretCode.length);
 
     if(pressed.join('').includes(secretCode)) {
-        window.open("https://youtu.be/ErYvqN2eajE")
+        document.getElementById("center-pic").src = 'https://cdn2.iconfinder.com/data/icons/heroes-villains-vol-2-colored-1/100/Walter_White-512.png';
+        document.getElementById("insulinoverdose-text").innerText = 'JESSE, WE NEED TO COOK';
+        document.body.style.backgroundImage = 'url(https://occ-0-586-2774.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABWi8MokudHdyyo2mns_HTM2NYmN0vuu5gMHytgiQu_Tu1fjv7lNZAh0Fwno-KGkLe3EbtJ3sT5HKl1L4JWMrC5Euyky26Au5vHjZoK7t-sQot_rxOFuI1MLU.jpg?r=451)'
     }
-        //make it so that if they type hello there it opens in a new tab with general kenobi 
-});*/
+});
 
 
 
