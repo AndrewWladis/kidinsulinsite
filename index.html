@@ -125,6 +125,21 @@
     <h1 class="songs-title">CART</h1>
     <div id="cart">
         <form id="cart-form" action="https://formspree.io/f/mzbwazzn" method="POST">
+            <div class="cart-item">
+                <br><label for="sockquantity">SOCKS:</label><select name="sockquantity"><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
+            </div>
+            <div class="cart-item">
+                <br><label for="shirtsize">SHIRT:</label><select name="shirtsize"><option value="XS">XS</option><option value="S">S</option><option value="M">M</option><option value="L">L</option><option value="XL">XL</option><option value="XXL">XXL</option></select><select name="shirtquantity"><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
+            </div>
+            <div class="cart-item">
+                <br><label for="hoodiesize">HOODIE:</label><select name="hoodiesize"><option value="XS">XS</option><option value="S">S</option><option value="M">M</option><option value="L">L</option><option value="XL">XL</option><option value="XXL">XXL</option></select><select name="hoodiequantity"><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
+            </div>
+            <div id="nameAndSubmit" class="cart-item">
+                <br>
+                <input type="text" id="name" placeholder="Full Name" name="name">
+            </div>
+            <br>
+            <input type="submit" id="submit" value="SUBMIT">
         </form>
         <br>
     </div>

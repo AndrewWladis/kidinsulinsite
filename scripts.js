@@ -109,67 +109,6 @@ window.addEventListener('keyup', (e) => {
     }
 });
 
-//cart and merch
-const shirt = document.getElementById('shirt');
-const hoodie = document.getElementById('hoodie');
-const sock = document.getElementById('sock');
-const cartSock = document.getElementById('cart-sock');
-const cartHoodie = document.getElementById('cart-hoodie');
-const cartShirt = document.getElementById('cart-shirt');
-const cartForm = document.getElementById('cart-form');
-let cart = [];
-let isShirtBack = false;
-let isHoodieBack = false;
-let shirtCounter = 0;
-let hoodieCounter = 0;
-
-let cartItemShirtHTML = document.createElement('div');
-cartItemShirtHTML.classList.add('cart-item');
-cartItemShirtHTML.innerHTML = `<br><label for="shirtsize">SHIRT:</label><select name="shirtsize"><option value="XS">XS</option><option value="S">S</option><option value="M">M</option><option value="L">L</option><option value="XL">XL</option><option value="XXL">XXL</option></select><select name="shirtquantity"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>`;
-
-let cartItemHoodieHTML = document.createElement('div');
-cartItemHoodieHTML.classList.add('cart-item');
-cartItemHoodieHTML.innerHTML = `<br><label for="hoodiesize">HOODIE:</label><select name="hoodiesize"><option value="XS">XS</option><option value="S">S</option><option value="M">M</option><option value="L">L</option><option value="XL">XL</option><option value="XXL">XXL</option></select><select name="hoodiequantity"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>`;
-
-let cartItemSockHTML = document.createElement('div');
-cartItemSockHTML.classList.add('cart-item');
-cartItemSockHTML.innerHTML = `<br><label for="sockquantity">SOCKS:</label><select name="sockquantity"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>`;
-
-shirt.addEventListener('mouseover', (event) => {
-    shirt.src = 'merch/shirt-back.jpg';
-    isShirtBack = true;
-    shirtCounter = 0;
-});
-
-hoodie.addEventListener('mouseover', (event) => {
-    hoodie.src = 'merch/hoodie-back.jpg';
-    isHoodieBack = true;
-    hoodieCounter = 0;
-});
-
-function addNameAndSubmit() {
-    if (cartForm.childElementCount === 0) {
-        cartForm.innerHTML = `<div id="nameAndSubmit" class="cart-item"><br><input type="text" id="name" placeholder="Full Name" name="name"></div><br><input type="submit" id="submit" value="SUBMIT">`;
-    }
-}
-
-
-cartShirt.onclick = function() {
-    addNameAndSubmit() 
-    cartForm.insertBefore(cartItemShirtHTML, document.getElementById('nameAndSubmit'));
-}
-
-cartHoodie.onclick = function() {
-    addNameAndSubmit() 
-    cartForm.insertBefore(cartItemHoodieHTML, document.getElementById('nameAndSubmit'));
-}
-
-cartSock.onclick = function() {
-    addNameAndSubmit() 
-    cartForm.insertBefore(cartItemSockHTML, document.getElementById('nameAndSubmit'));
-}
-
-
 
 
 
