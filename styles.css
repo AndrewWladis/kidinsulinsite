@@ -112,6 +112,10 @@ select {
     font-size: 1.75rem;
 }
 
+.in-stock {
+    color: greenyellow;
+}
+
 .label {
     font-size: 130%;
 }
