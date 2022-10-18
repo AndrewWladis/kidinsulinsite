@@ -275,13 +275,7 @@ select {
 
     .label {
         font-size: 90%;
-    }
-
-    .merch-img {
-        max-height: 100%;
-        max-width: 100%;
-        border-radius: 1%;
-    }    
+    } 
     
     .number {
         font-size: 2rem;
@@ -345,10 +339,6 @@ select {
 @media only screen and (max-width: 470px) {
     .label {
         font-size: 60%;
-    }
-    
-    .merch-item {
-        margin-left: 20%;
     }
 
     .nav-item {
