@@ -212,7 +212,6 @@ select {
     justify-content: space-around;
 }
 
-
 #countdown {
     margin-top: 5%;
     margin-bottom: 15%;
@@ -222,6 +221,10 @@ select {
     color: white;
     font-family: tacoFont;
     font-size: 1.5em;
+}
+
+#insulinoverdose-text {
+    margin-left: 4%;
 }
 
 #merch {
@@ -293,6 +296,10 @@ select {
         flex-wrap: wrap;
         justify-content: center;
         font-family: 'Roboto Condensed', sans-serif;
+    }
+
+    #insulinoverdose-text {
+        font-size: 120%;
     }
 }
 
